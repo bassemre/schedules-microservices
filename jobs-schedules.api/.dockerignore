@@ -1,0 +1,59 @@
+# Ignore node_modules and build artifacts
+node_modules/
+dist/
+.out/
+.next/
+.cache/
+
+# Ignore logs and debugging files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+
+# Ignore Docker-related files that shouldn’t be copied
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.debug.yml
+docker-compose.debug.yaml
+
+# Ignore OS & editor-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Ignore API & Worker specific build folders
+api-service/node_modules/
+worker-service/node_modules/
+api-service/dist/
+worker-service/dist/
+
+# Ignore unnecessary dependencies & configs
+**/coverage
+**/jest
+**/tests
+**/cypress
+**/.github
+**/.git
+**/.husky
+**/.eslint*
+**/.prettier*
+**/.editorconfig
